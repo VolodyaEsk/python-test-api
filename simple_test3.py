@@ -1,6 +1,7 @@
 from base_test import BaseTestAPI
 import requests
 
+
 class TestCreateIssue(BaseTestAPI):
 
     def test_create_issue(self):
