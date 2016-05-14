@@ -17,7 +17,7 @@ class TestDeleteIssue(unittest.TestCase):
         url = self.base_url + '/issue/' + 'API-10'
 
         r = requests.delete(url, auth = self.creds)
-        self.assertEquals(r.status_code, 200)
+        self.assertEquals(r.status_code, 404)
 
     def test_delete_unexisted_issue(self):
         

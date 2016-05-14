@@ -12,6 +12,7 @@ class TestDeleteIssue(BaseTestAPI):
         issue_id = self.create_issue()
 
         url = self.url + issue_id
+        print url
         r = requests.delete(url, cookies=self.cookies)
 
         self.assertEquals(r.status_code, 200)
